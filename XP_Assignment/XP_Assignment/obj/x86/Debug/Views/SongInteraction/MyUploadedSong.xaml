@@ -12,7 +12,10 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <TextBlock FontSize="30" Margin="20" HorizontalAlignment="Center">My Songs</TextBlock>
+
         <ScrollViewer>
+
             <ListView x:ConnectionId='9' x:Name="ListViewSong">
                 <ListView.ItemTemplate>
                     <DataTemplate                           >

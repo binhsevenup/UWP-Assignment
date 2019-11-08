@@ -8,10 +8,30 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
+    <Page.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="Margin" Value="10"></Setter>
+            <Setter Property="FontSize" Value="15"></Setter>
+            <Setter Property="FontWeight" Value="Bold"></Setter>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Margin" Value="10"></Setter>
+        </Style>
+        <Style TargetType="StackPanel">
+            <Setter Property="Margin" Value="10"></Setter>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="10"></Setter>
+        </Style>
+        <Style TargetType="PasswordBox">
+            <Setter Property="Margin" Value="10"></Setter>
+        </Style>
+    </Page.Resources>
+
     <ScrollViewer>
         <ScrollViewer.Content>
             <StackPanel>
-                <TextBlock FontSize="30" Margin="20">Create Music Form</TextBlock>
+                <TextBlock FontSize="30" Margin="20" HorizontalAlignment="Center">Make Your Own Songs</TextBlock>
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto"></RowDefinition>

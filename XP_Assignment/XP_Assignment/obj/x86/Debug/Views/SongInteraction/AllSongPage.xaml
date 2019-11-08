@@ -11,6 +11,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <TextBlock FontSize="30" Margin="20" HorizontalAlignment="Center">Global Library</TextBlock>
         <ScrollViewer>
             <ListView x:ConnectionId='9' x:Name="ListViewSong">
                 <ListView.ItemTemplate>

@@ -37,7 +37,7 @@
     <ScrollViewer>
         <ScrollViewer.Content>
             <StackPanel>
-                <TextBlock FontSize="30" Margin="20">Register Form</TextBlock>
+                <TextBlock FontSize="30" Margin="20">To Join Us, Create Your Own Account</TextBlock>
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto"></RowDefinition>

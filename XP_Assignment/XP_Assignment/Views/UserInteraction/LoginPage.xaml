@@ -30,9 +30,7 @@
 
 
 
-    <Grid HorizontalAlignment="Center">
-        <TextBlock FontSize="30" Margin="20" HorizontalAlignment="Center">Login Your Account</TextBlock>
-
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition Height="Auto"></RowDefinition>
@@ -45,9 +43,8 @@
             <ColumnDefinition Width="Auto"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <TextBlock Text="Login" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" />
-        <TextBlock Text="Email" Grid.Row="1" Grid.Column="0" />
-        <TextBox x:Name="Email" Width="200" Grid.Row="1" Grid.Column="1" />
+        <TextBlock Text="Email" Grid.Row="0" Grid.Column="0" />
+        <TextBox x:Name="Email" Width="200" Grid.Row="0" Grid.Column="1" />
         <TextBlock Text="Password" Grid.Row="2" Grid.Column="0"/>
         <PasswordBox x:Name="Password" Width="200" Grid.Row="2" Grid.Column="1"/>
         <StackPanel Grid.Row="3" Grid.Column="1" Orientation="Horizontal">
