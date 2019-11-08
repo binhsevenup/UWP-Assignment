@@ -1,0 +1,76 @@
+﻿<Page
+    x:Class="XP_Assignment.Views.UserInteraction.MemberInfoPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:XP_Assignment.Views.UserInteraction"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Page.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="Margin" Value="10"></Setter>
+            <Setter Property="FontSize" Value="15"></Setter>
+            <Setter Property="FontWeight" Value="Bold"></Setter>
+        </Style>
+    </Page.Resources>
+
+    <ScrollViewer>
+        <ScrollViewer.Content>
+            <StackPanel>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="212*"></ColumnDefinition>
+                        <ColumnDefinition Width="217*"></ColumnDefinition>
+                        <ColumnDefinition Width="1071*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Row="0" Grid.Column="0" FontSize="30" Margin="10,10,10,10">Welcome</TextBlock>
+                    <TextBlock Grid.Row="0" Grid.Column="1" FontSize="25" FontWeight="SemiBold" x:Name="FirstName"/>
+                    <TextBlock Grid.Row="0" Grid.Column="2" FontSize="25" FontWeight="SemiBold" x:Name="LastName"/>
+                </Grid>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="4*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Row="2" Grid.Column="0">Email</TextBlock>
+                    <TextBlock Grid.Row="2" Grid.Column="1" x:Name="Email"/>
+                    <TextBlock Grid.Row="3" Grid.Column="0">Phone</TextBlock>
+                    <TextBlock Grid.Row="3" Grid.Column="1" x:Name="Phone"/>
+                    <TextBlock Grid.Row="4" Grid.Column="0" >Address</TextBlock>
+                    <TextBlock Grid.Row="4" Grid.Column="1" x:Name="Address"></TextBlock>
+                    <TextBlock Grid.Row="5" Grid.Column="0" >Introduction</TextBlock>
+                    <TextBlock Grid.Row="5" Grid.Column="1" x:Name="Introduction"></TextBlock>
+                    <TextBlock Grid.Row="6" Grid.Column="0" >Gender</TextBlock>
+                    <TextBlock Grid.Row="6" Grid.Column="1" x:Name="Gender"></TextBlock>
+                    <TextBlock Grid.Row="7" Grid.Column="0" >Birthday</TextBlock>
+                    <TextBlock Grid.Row="7" Grid.Column="1" x:Name="Birthday"/>
+                    <StackPanel Grid.Row="8" Grid.Column="1">
+                        <Button Margin="10">Edit Profile</Button>
+                        <Button>Change Password</Button>
+                    </StackPanel>
+                    
+                </Grid>
+            </StackPanel>
+        </ScrollViewer.Content>
+    </ScrollViewer>
+</Page>
